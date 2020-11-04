@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+.all-container-home {
+    background-color: #ecfcff;
+    min-height: 89vh;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.space-around {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    width: 100vw;
+    background-color: #222831;
+    font-size: 24px;
+    color: white;
+
+}
+
+.brand-pos {
+    justify-content: flex-start;
+}
+
+.brand-text {
+    height: 80%;
+    width: 200px;
+    margin: 12px 0 0 30px;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.brand-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    height: 30rem;
+    width: 34%;
+    margin: 8% 32% 0;
+    color: #222831;
+    background-color: #e3f6f5;
+    border-radius: 10px;
+}
+
+.container button:hover {
+    background-color: #272343e3;
+}
+
+.container-main {
+    /* height: 90%; */
+    min-height: fit-content;
+    width: 80%;
+    margin: 1.5% 10%;
+    background-color: #6ba8a9;
+    border-radius: 10px;
+    color: #222831;
+}
+
+.container-main h1 {
+    margin-top: 1rem;
+}
+.posts {
+    width: 90%;
+    margin: 3%;
+}
+
+.posts p{
+    text-align: justify;
+}
+
+.posts .crud {
+    width: 30%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.posts .crud a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    width: 7rem;
+    height: 2rem;
+}
+
+.newPost {
+    display: none;
+    flex-flow: column;
+}
+
+.postForm {
+    font-size: 20px;
+    margin: auto;
+}
+
+.sometext {
+    margin: 5%;
+    font-size: x-large;
+    padding: 5% 0%;
+}
+
+.sometext-register {
+    margin: 5%;
+    font-size: x-large;
+    padding: 5% 0%;
+}
+
+.sometext-register h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    display: block;
+    height: 2rem;
+    width: 12rem;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.align-buttons {
+    margin-top: 10%;
+    width: 12rem;
+    height: 2rem;
+    font-size: 24px;
+    background-color: #272343;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.createNew {
+    margin: auto;
+    height: auto;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #10316b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.createNew:hover {
+    background-color: #10316bd2;
+    text-decoration: none;
+    box-shadow: 3px 3px #c9d1d3;
+    color: white;
+}
+
+.cancelPost {
+    margin: auto;
+    height: auto;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.cancelPost:hover {
+    text-decoration: none;
+    box-shadow: 3px 3px #c9d1d3;
+    color: white;
+}
+.edit-delete {
+    width: 20rem;
+}
+
+.posts .crud .formEdit button {
+    margin-bottom: 2rem;
+    height: auto;
+    width: 7rem;
+    font-size: 12px;
+    background-color:blue;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.posts .crud .formEdit button:hover {
+    box-shadow: 1px 1px #c9d1d3;
+    background-color: blue;
+}
+
+.posts .crud .formDelete button {
+    margin-bottom: 2rem;
+    height: auto;
+    width: 7rem;
+    font-size: 12px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.posts .crud .formDelete button:hover {
+    box-shadow: 1px 1px #c9d1d3;
+    background-color: #da2d2de8;
+}
+
+.posts .formEdit {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.posts .formEdit input {
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+    color: black;
+}
+
+.posts .formEdit button {
+    width: 40%;
+    height: 40px;
+    background-color: #1b831b;
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+}
+
+.posts .formEdit button:hover {
+    box-shadow: white 2px 2px;
+}
+
+.logout {
+    margin: auto;
+    margin-right: 2rem;
+    width: 10rem;
+    font-size: 20px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.logout:hover {
+    background-color: #da2d2dc5;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    height: 4vh;
+    min-height: fit-content;
+    color: white;   
+    font-size: 20px;
+    background-color: #222831;
+}
+
+.title {
+    font-size: 16px; 
+    margin: 2rem 0;
+}
+
+.title label {
+    font-size: 2.5rem;
+}
+
+.content {
+    font-size: 2.5rem; 
+    justify-content: center;
+}
+
+.contentBox {
+    background-color: white;
+    font-size: 16px;
+    justify-content: center;
+    margin: 3rem 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1024px){
+    .all-container-login {
+        min-height: 83rem;
+    }
+
+    .container {
+        width: 80%;
+        height: 30rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .all-container-login {
+        min-height: 61rem;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 675px)
+{
+    .brand-text {
+        margin-right: 1.5rem;
+        flex-flow: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+    .container-main {
+        /* height: 90%; */
+        margin: auto;
+    }
+    .all-container-login {
+        min-height: 48rem;
+    }
+    .all-container-home {
+        min-height: 48rem;
+    }
+
+    .text-register {
+        margin-top: 4rem;
+    }
+    
+}
+
+

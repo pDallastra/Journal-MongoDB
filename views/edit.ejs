@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="brand-pos">
+      <a class="brand-text flex" href="/home">Web Journal</a>
+    </div>
+    <div class="flex">
+      <a class="logout flex center" role="button" href="/logout">Logout</a>
+    </div>
+  </nav>
+  <!-- MAIN CONTAINER -->
+  <div class="all-container-home flex col">
+    <!-- CONTENT CONTAINER -->
+    <section class="container-main flex center col">
+      <div class="posts flex col">
+        <%posts.reverse().forEach(function(post){%>
+          <form action="/edit/<%=post._id%>" method="POST" class="formEdit">
+            <h2><%=post.title%></h2>
+            <input type="text" value="<%=post.title%>" name="title">
+            <input type="text" value="<%=post.content%>" name="content">
+            <button type="submit">Edit</button>
+          </form>
+        <%})%>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <h3 class="flex center">Paulo Dallastra</h3>
+  </footer>
+  <script>
+    function post() {
+      var displayPost = document.getElementById('newPost').style.display = "flex"
+      var createButton = document.getElementById('createNew').style.display = "none"
+    }
+
+    function cancel() {
+      var createButton = document.getElementById('createNew').style.display = "flex"
+      var displayPost = document.getElementById('newPost').style.display = "none"
+    }
+  </script>
+</body>
+</html>

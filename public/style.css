@@ -1,0 +1,110 @@
+* { margin: 0; padding: 0;}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f6f9;
+}
+
+.loginContainer {
+    width: 20%;
+    height: 35%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #14274e;
+    margin-top: -150px;
+    border-radius: 10px;
+}
+
+.loginContainer form {
+    display: flex;
+    flex-flow: column;
+}
+
+.loginContainer form:first-child {
+    margin-top: 30px;
+}
+
+.loginContainer input {
+    width: 70%;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 2px;
+    border: transparent;
+    outline: none;
+    text-align: center;
+}
+
+.loginContainer button {
+    width: 40%;
+    height: 40px;
+    margin: 40px auto 0;
+    border-radius: 2px;
+    border: transparent;
+    outline: none;
+    background-color: #9ba4b4;
+}
+
+.loginContainer button:hover {
+    background-color: #394867;
+}
+
+.loginContainer hr {
+    margin: -80px auto 0;
+    width: 60%;
+}
+
+.loginContainer a {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.register {
+    width: 22%;
+    height: 48%;
+    display: flex;
+    flex-flow: column;
+    background-color: #14274e;
+    color: white;
+    border-radius: 10px;
+}
+
+.register header {
+    margin: 5px 5px;
+}
+
+.register hr {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.register .registerContainer form {
+    display: flex;
+    flex-flow: column;
+}
+
+.register input {
+    width: 80%;
+    height: 30px;
+    margin: 10px auto;
+}
+
+.register button {
+    width: 45%;
+    height: 45px;
+    margin: 25px auto;
+}
+
+.register a {
+    margin: 20px auto 0;
+    color: white;
+    text-decoration: none;
+}
