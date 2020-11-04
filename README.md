@@ -16,4 +16,4 @@ The App will create those notes and only allow the "creator account" to read, de
 
 You can type on your terminal "node app.js" while in the main folder to execute for the project.
 Go to localhost:3000 and start using the project.
-(screenshot.png)
+![Main Page](screenshot.png)
