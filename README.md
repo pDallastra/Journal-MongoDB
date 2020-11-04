@@ -14,4 +14,5 @@ The App will create those notes and only allow the "creator account" to read, de
 
 ## Execution
 
-Click on the website below and create your account. Then you just need to sign in and start creating your notes on the website. Clicking on the option buttons, you will be able to edit or delete your notes.
+You can type on your terminal "node app.js" while in the main folder to execute for the project.
+Go to localhost:3000 and start using the project.
